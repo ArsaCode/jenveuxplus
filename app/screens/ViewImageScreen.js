@@ -1,13 +1,15 @@
 import React from 'react'
 import { Image, StyleSheet, View } from 'react-native'
+import { AntDesign } from '@expo/vector-icons';
+
 import colors from '../config/colors'
 
 export default function ViewImageScreen() {
     return (
         <View style={styles.container}>
         <View style={styles.buttons}>
-            <View style={styles.closeicon} />
-            <View style={styles.deleteicon} />
+            <AntDesign style={styles.closeicon} name="closecircleo" size={30} color="red" />
+            <AntDesign style={styles.downloadicon} name="download" size={30} color="green" />
         </View>
         <Image
         source={require('../assets/ipod.jpg')}
@@ -25,24 +27,17 @@ const styles = StyleSheet.create({
     buttons: {
         position: 'absolute',
         width: '100%',
+        alignItems: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between',
     },
     closeicon: {
-        borderRadius: 15,
         left: 10,
-        top: 10,
-        width: 50,
-        height: 50,
-        backgroundColor: colors.primary,
+        top: 30,
     },
-    deleteicon: {
-        borderRadius: 15,
+    downloadicon: {
         right: 10,
-        top: 10,
-        width: 50,
-        height: 50,
-        backgroundColor: 'tomato',
+        top: 30,
     },
     image: {
         width: '100%',

@@ -18,14 +18,17 @@ export default function Card({title, subTitle, image}) {
 const styles = StyleSheet.create({
     card: {
         borderRadius: 15,
+        overflow: 'hidden',
+        height: '50%',
         backgroundColor: colors.white,
+        marginBottom: 10,
     },
     image: {
         width: '100%',
-        height: 200,
+        height: '70%',
     },
     detailsContainer: {
-        padding: 20,
+        padding: 15,
     },
     titleText: {
         fontSize: 22,

@@ -1,12 +1,14 @@
 import React from 'react';
-import { Platform, Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
+import { Platform, Image, ImageBackground, StyleSheet, View } from 'react-native';
 
-import Button from '../components/Button';
+import AppButton from '../components/AppButton';
+import AppText from '../components/AppText';
+import colors from '../config/colors';
 
 export default function WelcomeScreen(props) {
     return (
         <ImageBackground 
-        style={styles.imagebackground} 
+        style={styles.imageBackground} 
         source={require('../assets/welcomescreen.jpg')}
         blurRadius={5}
         width={200}
@@ -15,28 +17,27 @@ export default function WelcomeScreen(props) {
 
         <View style={styles.banner}>
         <Image source={require('../assets/logojvp.png')} />
-        <Text style={styles.bannertext}>Vendez ce que vous n'utilisez plus</Text>
+        <AppText style={styles.bannerText}>Vendez ce que vous n'utilisez plus</AppText>
         </View>
 
         <View style={styles.buttons}>
-         <Button buttonName="Connexion" />
-         <Button buttonName="Inscription"/>
+         <AppButton buttonName="Connexion" color="primary" onPress={() => console.log("login")} />
+         <AppButton buttonName="Inscription" color="primary2" onPress={() => console.log("register")}/>
         </View>
         </ImageBackground>
     );
 }
 
 const styles = StyleSheet.create({
-    imagebackground: {
+    imageBackground: {
         flex: 1,
         alignItems: 'center',
     },
     banner: {
         alignItems: 'center',
     },
-    bannertext: {
+    bannerText: {
         fontStyle: 'italic',
-        fontFamily: Platform.OS === "android" ? 'Roboto' : 'Avenir',
         position: 'absolute',
         top: 130,
         fontSize: 18,

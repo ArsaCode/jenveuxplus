@@ -11,18 +11,22 @@ export default function ViewImageScreen() {
             <AntDesign style={styles.closeicon} name="closecircleo" size={30} color="red" />
             <AntDesign style={styles.downloadicon} name="download" size={30} color="green" />
         </View>
-        <Image
-        source={require('../assets/ipod.jpg')}
-        resizeMode='contain'
-        style={styles.image}
-        />
+        <View style={styles.imageContainer}>
+            <Image
+            source={require('../assets/ipod.jpg')}
+            resizeMode="stretch"
+            style={styles.image}
+            borderRadius={25}
+            />
+        </View>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: colors.black,
+        flex: 1,
+        backgroundColor: colors.primary,
     },
     buttons: {
         position: 'absolute',
@@ -38,6 +42,12 @@ const styles = StyleSheet.create({
     downloadicon: {
         right: 10,
         top: 30,
+    },
+    imageContainer: {
+        marginTop: 130,
+        height: '60%',
+        width: '100%',
+        overflow: 'hidden',
     },
     image: {
         width: '100%',

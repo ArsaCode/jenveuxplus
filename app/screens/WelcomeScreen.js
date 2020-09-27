@@ -1,11 +1,10 @@
 import React from 'react';
-import { Platform, Image, ImageBackground, StyleSheet, View } from 'react-native';
+import { Image, ImageBackground, StyleSheet, View } from 'react-native';
 
 import AppButton from '../components/AppButton';
 import AppText from '../components/AppText';
-import colors from '../config/colors';
 
-export default function WelcomeScreen(props) {
+export default function WelcomeScreen() {
     return (
         <ImageBackground 
         style={styles.imageBackground} 

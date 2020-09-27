@@ -3,5 +3,6 @@ export default {
     primary2: '#222a66',
     secondary: '#414141',
     black: 'black',
-    white: 'white'
+    white: 'white',
+    white2: '#cfcfd5',
 }

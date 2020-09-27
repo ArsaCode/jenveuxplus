@@ -35,8 +35,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     bannertext: {
-        top: 0,
-        fontSize: 20,
+        position: 'absolute',
+        top: 150,
+        fontSize: 18,
     },
     buttons: {
         position: 'absolute',
@@ -44,14 +45,24 @@ const styles = StyleSheet.create({
         bottom: 50,
     },
     loginbutton: {
-        width: '100%',
+        borderRadius: 15,
+        shadowColor: 'black',
+        shadowOffset: {width: 10, height: 10},
+        shadowOpacity: 0.7,
         height: 70,
         backgroundColor: colors.primary,
+        marginLeft: 10,
+        marginRight: 10,
     },
     registerbutton: {
+        borderRadius: 15,
+        shadowColor: 'black',
+        shadowOffset: {width: 10, height: 10},
+        shadowOpacity: 0.7,
         marginTop: 20,
-        width: '100%',
         height: 70,
         backgroundColor: colors.primary,
+        marginLeft: 10,
+        marginRight: 10,
     }
 })

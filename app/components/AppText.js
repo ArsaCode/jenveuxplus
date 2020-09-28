@@ -3,7 +3,7 @@ import { StyleSheet, Platform ,Text, ImagePropTypes } from 'react-native'
 
 export default function AppText({children, style}) {
     return (
-        <Text style={[styles.appText, {...style}]}>
+        <Text style={[styles.appText, style]}>
             {children}
         </Text>
     )

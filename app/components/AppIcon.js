@@ -2,7 +2,7 @@ import React from 'react'
 import { View, StyleSheet } from 'react-native'
 import { AntDesign } from '@expo/vector-icons';
 
-export default function Icon({
+export default function AppIcon({
     name,
     size,
     backgroundColor,

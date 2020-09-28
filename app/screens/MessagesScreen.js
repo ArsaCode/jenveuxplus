@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import { FlatList } from 'react-native'
-import AppScreen from '../components/AppScreen'
-import ListItem from '../components/ListItem'
-import ListItemDelete from '../components/ListItemDelete'
-import ListItemSeparator from '../components/ListItemSeparator'
+import React, { useEffect, useState } from 'react';
+import { FlatList } from 'react-native';
+
+import AppScreen from '../components/AppScreen';
+import ListItem from '../components/ListItem';
+import ListItemDelete from '../components/ListItemDelete';
+import ListItemSeparator from '../components/ListItemSeparator';
 
 export default function MessagesScreen() {
     const initialMessages = [

@@ -2,11 +2,11 @@ import React from 'react'
 import { Image, StyleSheet, View } from 'react-native'
 import { AntDesign } from '@expo/vector-icons';
 
-import colors from '../config/colors'
+import AppScreen from '../components/AppScreen';
 
 export default function ViewImageScreen() {
     return (
-        <View style={styles.container}>
+        <AppScreen>
         <View style={styles.buttons}>
             <AntDesign style={styles.closeicon} name="closecircleo" size={30} color="red" />
             <AntDesign style={styles.downloadicon} name="download" size={30} color="green" />
@@ -19,15 +19,11 @@ export default function ViewImageScreen() {
             borderRadius={25}
             />
         </View>
-        </View>
+        </AppScreen>
     )
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: colors.primary,
-    },
     buttons: {
         position: 'absolute',
         width: '100%',

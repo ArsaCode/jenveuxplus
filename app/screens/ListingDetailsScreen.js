@@ -5,10 +5,11 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import colors from '../config/colors'
 import AppText from '../components/AppText'
 import ListItem from '../components/ListItem';
+import AppScreen from '../components/AppScreen';
 
 export default function ListingDetailsScreen() {
     return (
-        <View style={styles.container}>
+        <AppScreen>
             <Image 
             style={styles.image}
             source={require('../assets/ipod.jpg')}
@@ -27,16 +28,13 @@ export default function ListingDetailsScreen() {
             title="Arsalan G."
             subTitle="5 ventes"
             />
-        </View>
+        </AppScreen>
     )
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: colors.primary,
-    },
     image: {
+        borderRadius: 25,
         width: '100%',
         height: 300,
     },

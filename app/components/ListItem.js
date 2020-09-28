@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
         marginTop: 10,
         justifyContent: 'center',
         flexDirection: 'row',
-        height: 30,
     },
     image: {
         marginRight: 10,

@@ -9,10 +9,10 @@ export default function ListItem({title, subTitle, image, onPress, renderRightAc
         <Swipeable renderRightActions={renderRightActions}>
         <TouchableHighlight underlayColor={colors.primarylight} onPress={onPress}>
             <View style={styles.listContainer}>
-                    <Image
+                    {image && <Image
                     style={styles.image}
                     source={image}
-                    />
+                    />}
                     <View style={styles.descContainer}>
                         <AppText style={styles.descHead}>{title}</AppText>
                         <AppText style={styles.descSub}>{subTitle}</AppText>

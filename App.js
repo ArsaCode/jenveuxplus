@@ -1,12 +1,12 @@
 import React from 'react';
 
-import ListingDetailsScreen from './app/screens/ListingDetailsScreen'
-import MessagesScreen from './app/screens/MessagesScreen';
-import ViewImageScreen from './app/screens/ViewImageScreen';
-import WelcomeScreen from './app/screens/WelcomeScreen';
+import AppScreen from './app/components/AppScreen';
+import ListItem from './app/components/ListItem';
 
 export default function App() {
   return (
-    <MessagesScreen />
+    <AppScreen>
+      <ListItem title="My title" subTitle="Subtitle" />
+    </AppScreen>
   );
 }

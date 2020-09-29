@@ -22,10 +22,10 @@ const menuItems = [
         icon: {
             name: "mail",
             size: 70,
-            backgroundColor: colors.success,
+            backgroundColor: 'tomato',
             iconColor: colors.white,
         }
-    }
+    },
 ]
 
 export default function AccountScreen() {
@@ -45,11 +45,24 @@ export default function AccountScreen() {
                 renderItem={({item}) =>
                 <ListItem
                     title={item.title}
-                    ImageComponent={
+                    IconComponent={
                         <AppIcon name={item.icon.name} size={item.icon.size} iconColor={item.icon.iconColor} backgroundColor={item.icon.backgroundColor} />
                     }/>
                 }
                 ItemSeparatorComponent={() => <ListItemSeparator /> }
+                />
+            </View>
+            <View style={styles.container}>
+                <ListItem 
+                title="Se déconnecter"
+                IconComponent={
+                    <AppIcon
+                    name="logout"
+                    size={70}
+                    backgroundColor={colors.danger}
+                    iconColor={colors.white}
+                    />
+                }
                 />
             </View>
         </AppScreen>

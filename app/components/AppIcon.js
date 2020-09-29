@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import { View } from 'react-native'
 import { AntDesign } from '@expo/vector-icons';
 
 export default function AppIcon({
@@ -21,6 +21,3 @@ export default function AppIcon({
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-})

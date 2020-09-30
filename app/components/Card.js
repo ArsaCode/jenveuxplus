@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
         overflow: 'hidden',
         backgroundColor: colors.white,
         marginHorizontal: 10,
+        marginVertical: 10,
     },
     image: {
         width: '100%',

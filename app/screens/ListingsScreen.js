@@ -1,9 +1,7 @@
 import React from 'react';
-import { FlatList } from 'react-native';
 
 import Card from '../components/Card';
 import AppScreen from '../components/AppScreen';
-import ListItemSeparator from '../components/ListItemSeparator';
 
 const listings = [
     {
@@ -23,16 +21,14 @@ const listings = [
 export default function ListingsScreen() {
     return (
         <AppScreen>
-            <FlatList
-                contentContainerStyle={{flexGrow: 1}}
-                data={listings}
-                keyExtractor={listing => listing.id.toString()}
-                renderItem={({item}) => <Card
-                    title={item.title}
-                    subTitle={item.price + '€'}
-                    image={item.image}
-                /> }
-            />
+            {listings.map((item, key) => (
+                <Card
+                key={key} 
+                title={item.title}
+                subTitle={item.price + '€'}
+                image={item.image}
+                />
+            ))}
         </AppScreen>
     )
 }

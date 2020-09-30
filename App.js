@@ -1,9 +1,9 @@
 import React from 'react';
 
-import ListingsScreen from './app/screens/ListingsScreen';
+import AccountScreen from './app/screens/AccountScreen';
 
 export default function App() {
   return (
-    <ListingsScreen />
+    <AccountScreen />
   );
 }

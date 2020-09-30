@@ -15,7 +15,7 @@ export default function ViewImageScreen() {
         <View style={styles.imageContainer}>
             <Image
             source={require('../assets/ipod.jpg')}
-            resizeMode="stretch"
+            resizeMode="cover"
             style={styles.image}
             borderRadius={25}
             />

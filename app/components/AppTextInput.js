@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, TextInput, View } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 
-import colors from '../config/colors'
+import defaultStyles from '../config/styles'
 
 export default function AppTextInput({icon, placeholder}) {
     return (
@@ -24,7 +24,7 @@ export default function AppTextInput({icon, placeholder}) {
 const styles = StyleSheet.create({
     container: {
         alignSelf: 'center',
-        backgroundColor: colors.white2,
+        backgroundColor: defaultStyles.colors.white2,
         flexDirection: 'row',
         borderRadius: 25,
         width: '95%',

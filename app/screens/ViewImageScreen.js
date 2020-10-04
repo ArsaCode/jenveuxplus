@@ -3,14 +3,14 @@ import { Image, StyleSheet, View } from 'react-native'
 import { AntDesign } from '@expo/vector-icons';
 
 import AppScreen from '../components/AppScreen';
-import colors from '../config/colors';
+import defaultStyles from '../config/styles';
 
 export default function ViewImageScreen() {
     return (
         <AppScreen>
         <View style={styles.buttons}>
-            <AntDesign style={styles.closeicon} name="closecircleo" size={30} color={colors.danger} />
-            <AntDesign style={styles.downloadicon} name="download" size={30} color={colors.success} />
+            <AntDesign style={styles.closeicon} name="closecircleo" size={30} color={defaultStyles.colors.danger} />
+            <AntDesign style={styles.downloadicon} name="download" size={30} color={defaultStyles.colors.success} />
         </View>
         <View style={styles.imageContainer}>
             <Image

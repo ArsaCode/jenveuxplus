@@ -1,13 +1,13 @@
-import React from 'react'
-import { StyleSheet, TouchableOpacity } from 'react-native'
+import React from 'react';
+import { StyleSheet, TouchableOpacity } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 
-import colors from '../config/colors'
+import defaultStyles from '../config/styles';
 import AppText from './AppText';
 
 export default function AppButton({buttonName, onPress, color}) {
     return (
-        <TouchableOpacity style={[styles.buttonStyle, {backgroundColor: colors[color]}]} onPress={onPress}>
+        <TouchableOpacity style={[styles.buttonStyle, {backgroundColor: defaultStyles.colors[color]}]} onPress={onPress}>
             {
                 buttonName === "Connexion" ?
                 <AntDesign name="login" size={24} color="white" />
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     buttonText: {
         fontSize: 24,
         marginLeft: 10,
-        color: colors.white,
+        color: defaultStyles.colors.white,
         shadowColor: 'black',
         shadowOffset: { width: 5, height: 5 },
         shadowOpacity: 0.8,

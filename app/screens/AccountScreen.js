@@ -5,7 +5,7 @@ import AppScreen from '../components/AppScreen';
 import ListItemSeparator from '../components/ListItemSeparator';
 import AppIcon from '../components/AppIcon'
 import ListItem from '../components/ListItem';
-import colors from '../config/colors';
+import defaultStyles from '../config/styles';
 
 const menuItems = [
     {
@@ -13,8 +13,8 @@ const menuItems = [
         icon: {
             name: "bars",
             size: 70,
-            backgroundColor: colors.primary2,
-            iconColor: colors.white,
+            backgroundColor: defaultStyles.colors.primary2,
+            iconColor: defaultStyles.colors.white,
         }
     },
     {
@@ -23,7 +23,7 @@ const menuItems = [
             name: "mail",
             size: 70,
             backgroundColor: 'tomato',
-            iconColor: colors.white,
+            iconColor: defaultStyles.colors.white,
         }
     },
 ]
@@ -59,8 +59,8 @@ export default function AccountScreen() {
                     <AppIcon
                     name="logout"
                     size={70}
-                    backgroundColor={colors.danger}
-                    iconColor={colors.white}
+                    backgroundColor={defaultStyles.colors.danger}
+                    iconColor={defaultStyles.colors.white}
                     />
                 }
                 />
@@ -72,7 +72,7 @@ export default function AccountScreen() {
 const styles = StyleSheet.create({
     container: {
         borderRadius: 15,
-        backgroundColor: colors.primarylight,
+        backgroundColor: defaultStyles.colors.primarylight,
         marginVertical: 20,
     }
 })

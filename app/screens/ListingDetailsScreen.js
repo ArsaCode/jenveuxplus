@@ -2,7 +2,7 @@ import React from 'react'
 import { Image, View, StyleSheet } from 'react-native'
 import { FontAwesome5 } from '@expo/vector-icons';
 
-import colors from '../config/colors'
+import defaultStyles from '../config/styles'
 import AppText from '../components/AppText'
 import ListItem from '../components/ListItem';
 import AppScreen from '../components/AppScreen';
@@ -18,7 +18,7 @@ export default function ListingDetailsScreen() {
                 Ipod Pro Max
             </AppText>
             <View style={styles.descContainer}>
-                <FontAwesome5 name="coins" size={24} color={colors.white2} />
+                <FontAwesome5 name="coins" size={24} color={defaultStyles.colors.white2} />
                 <AppText style={styles.descText}>
                 Prix : 70€
                 </AppText>
@@ -43,14 +43,14 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     titleText: {
-        color: colors.white,
+        color: defaultStyles.colors.white,
         textAlign: 'center',
         fontSize: 24,
         fontWeight: 'bold',
         marginVertical: 15,
     },
     descText: {
-        color: colors.white,
+        color: defaultStyles.colors.white,
         marginLeft: 10,
         fontSize: 20,
     },

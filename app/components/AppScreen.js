@@ -1,7 +1,7 @@
 import React from 'react'
 import { SafeAreaView, StyleSheet } from 'react-native'
 import Constants from 'expo-constants'
-import colors from '../config/colors'
+import defaultStyles from '../config/styles'
 
 export default function AppScreen({children, style}) {
     return (
@@ -14,7 +14,7 @@ export default function AppScreen({children, style}) {
 const styles = StyleSheet.create({
     screen: {
         flex: 1,
-        backgroundColor: colors.primary,
+        backgroundColor: defaultStyles.colors.primary,
         paddingTop: Constants.statusBarHeight,
     },
 })
